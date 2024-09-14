@@ -1,0 +1,30 @@
+.carousel{
+    display: flex;
+    overflow:hidden;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+ }
+ 
+ img{
+ 
+    width: 9500px;
+    height: 7100;
+    animation: slider 3s infinite steps(3);
+ }
+ 
+ @keyframes slider{
+    0%, 33.33%{
+       transform: translateX(0);
+    }
+ 
+    33.34%, 66.66%{
+       transform: translateX(-1000px);
+    }
+    
+ 
+    66.67%, 100%{
+       transform: translateX(-2000px);
+    }
+ 
+ }
